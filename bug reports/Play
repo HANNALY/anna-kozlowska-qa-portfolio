@@ -1,1 +1,5 @@
+## Bug Reports (produkcyjne i stagingowe przypadki z Play)
+Szczegółowe, realne zgłoszenia błędów wykonane na środowiskach DEV/TEST.
 
+Błąd 500 Internal Server Error – MNP/eSIM (Critical)
+FE: Brak możliwości wyboru punktu odbioru w kroku 2 procesu zamówienia
