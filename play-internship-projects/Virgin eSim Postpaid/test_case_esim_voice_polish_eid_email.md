@@ -1,13 +1,4 @@
-Test Case: eSIM Sales – VOICE – Polish Citizen – EID Online (Email Delivery)
-
-- Module: Checkout / eSIM Sales
-- Type: End-to-End
-- Priority: High
-
-# Test Case: eSIM Sale - VOICE - New Client - EID Online (Email Delivery)
-
-| **Preconditions** | User has valid access to the eShop environment (DEV/TEST via Swagger).<br>User selects “New Client” from Abonaments section.<br>Chosen offer exists in Product Catalog (PC) and backend returns it correctly.<br>Valid PESEL number generated for test user (age 100+). |
-# Test Case: eSIM Sale - VOICE - New Client - EID Online (Email Delivery)
+# Sale of an eSIM for a voice plan to a new client, including online EID activation with email delivery.
 
 ## Preconditions
 - The user has valid access to the eShop environment (DEV/TEST via Swagger).  
