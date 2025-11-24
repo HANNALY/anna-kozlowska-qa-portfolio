@@ -10,7 +10,25 @@
 
 | **Step** | **Action** | **Input / Data** | **Expected Result** |
 |----------|------------|-----------------|-------------------|
-| 1 | The user opens the offer page in the UI or generates the cart via Swagger. | N/A | The system loads the initial (zero) cart page. The following elements are visible: disclaimer, selected offer (content fetched from table), a new phone number (editable), order value (package fee + delivery fee), and a documents modal. |
+| 1 | The user opens the offer page in the UI or generates the cart via Swagger. | {
+ Request body:
+ "cartItems": [
+    {
+      "itemType": "SOLO",
+      "offerItems": [
+        {
+          "offerId": 4023596289,
+          "offerType": "MOBILE",
+          "simType": "ESIM"
+        }
+      ]
+    }
+  ]
+}
+
+Link: sklep-dev/test-virginmobile.pl
+
+ | The system loads the initial (zero) cart page. The following elements are visible: disclaimer, selected offer (content fetched from table), a new phone number (editable), order value (package fee + delivery fee), and a documents modal. |
 | 2 | The user fills in personal and identification data. | Email: `p4.testy.new@gmail.com`<br>Phone: `+48 796 672 218`<br>First name: Jan<br>Last name: ECOMMERCETEST<br>Citizenship: Poland<br>PESEL: generated (age > 100)<br>ID card number: generated<br>ID expiry date: any valid date<br>Correspondence address: same as home address | The system validates the input and redirects the user to Step 1 of the checkout process (personal details). |
 | 3 | The user clicks “Continue” to proceed to delivery selection. | N/A | The system redirects the user to Step 2 – Delivery Method. |
 | 4 | The user selects email delivery. | Delivery via email (eSIM activation QR via email) | The selected delivery option is highlighted and saved in the current order state. |
