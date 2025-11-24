@@ -12,7 +12,7 @@ Summary
 During the MNP/Transfer process for a Mobile + eSIM offer, the backend returns a 500 Internal Server Error when calling the POST /msisdn/cases endpoint.
 
 1️⃣ Request – Cart Creation (curl)
-_ curl -X 'POST' \
+ curl -X 'POST' \
   'https://sklep-test.play.pl/api/cart/' \
   -H 'accept: */*' \
   -H 'Content-Type: application/json' \
@@ -29,7 +29,7 @@ _ curl -X 'POST' \
         ]
       }
     ]
-  }' _
+  }' 
 
 
 Cart OrderId: f7b3fc64-ed64-403d-950a-7c6166f1f3d7
