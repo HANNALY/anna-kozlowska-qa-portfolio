@@ -1,16 +1,16 @@
-# Test Case: Sale of a Voice STANDARD plan without a device, where the primary number (owner) uses a physical SIM and the secondary number (member) uses a SIM, with EID activation delivered via email for one number and via courier for the other.
+# Sale of a Voice STANDARD plan without a device, where the primary number (owner) uses a physical SIM and the secondary number (member) uses a SIM, with EID activation delivered via email for one number and via courier for the other.
 
 Preconditions:
-The user has valid access to the eShop environment (DEV/TEST) via UI and/or Swagger.
 
-The user selects “New Client” from the Abonaments (Subscriptions) section on the website.
+ The user has valid access to the eShop environment (DEV/TEST) via UI and/or Swagger.
 
-The Voice STANDARD plan is available in the Product Catalog (PC) and returned correctly by the backend.
+ The user selects “New Client” from the Abonaments (Subscriptions) section on the website.
 
-Two numbers are created: the primary (owner) and secondary (member).
+ The Voice STANDARD plan is available in the Product Catalog (PC) and returned correctly by the backend.
 
-EID activation options (email and courier) are available for the respective numbers.
+ Two numbers are created: the primary (owner) and secondary (member).
 
+ EID activation options (email and courier) are available for the respective numbers.
 
 | Step | Action | Input / Data | Expected Result |
 |------|--------|--------------|----------------|
