@@ -1,17 +1,18 @@
-# Bug Report – 500 Internal Server Error w procesie MNP/Transfer (eSIM)
+# Bug Report – 500 Internal Server Error during MNP/Transfer (eSIM)
 
 Severity: Critical
 Priority: Blocker
 Status: Reproducible
-Środowisko: TEST
-Moduł: MNP / Transfer numeru
-Komponent: msisdn-service
+Environment: TEST
+Module: MNP / Number Transfer
+Component: msisdn-service
 
-- Opis błędu
+📝 Summary
 
-Podczas procesu MNP/Transfer numeru dla oferty Mobile + eSIM backend zwraca błąd 500 Internal Server Error przy wywołaniu endpointu POST /msisdn/cases, co blokuje dalszy proces i uniemożliwia dokończenie zamówienia.
+During the MNP/Transfer process for a Mobile + eSIM offer, the backend returns a 500 Internal Server Error when calling the POST /msisdn/cases endpoint.
+This issue blocks the entire flow and prevents the user from completing the order.
 
-Request – utworzenie koszyka (curl)
+1️⃣ Request – Cart Creation (curl)
 curl -X 'POST' \
   'https://sklep-test.play.pl/api/cart/' \
   -H 'accept: */*' \
@@ -21,7 +22,7 @@ curl -X 'POST' \
       {
         "itemType": "SOLO",
         "offerItems": [
-        {
+          {
             "offerId": 4025680619,
             "offerType": "MOBILE",
             "simType": "ESIM"
@@ -31,13 +32,13 @@ curl -X 'POST' \
     ]
   }'
 
-Response:         
-OrderId koszyka: f7b3fc64-ed64-403d-950a-7c6166f1f3d7
-Oferta: MNP → Mobile → eSIM
 
-Payload generowany poprawnie po stronie koszyka – błąd pojawia się w backendzie.
+Cart OrderId: f7b3fc64-ed64-403d-950a-7c6166f1f3d7
+Offer: MNP → Mobile → eSIM
 
-3️⃣ Odpowiedź z błędem (response)
+The payload is generated correctly on the cart side — the issue appears on the backend.
+
+2️⃣ Error Response
 {
   "errorUuid": "db8765d6-450c-471b-96fe-3156d06a4b9d",
   "reasons": [
@@ -45,27 +46,27 @@ Payload generowany poprawnie po stronie koszyka – błąd pojawia się w backen
   ]
 }
 
-4️⃣ Oczekiwany rezultat
+3️⃣ Expected Result
 
-System poprawnie tworzy case MNP w msisdn-service, umożliwiając przejście do kolejnego kroku aktywacji eSIM.
+The system should successfully create an MNP case in msisdn-service, allowing the user to proceed to the next step of the eSIM activation process.
 
-5️⃣ Rzeczywisty rezultat
+4️⃣ Actual Result
 
-Backend zwraca HTTP 500 → proces zostaje przerwany → zamówienia MNP/eSIM nie można dokończyć.
+The backend returns HTTP 500, which stops the process and prevents finishing the MNP/eSIM order.
 
-7️⃣ Klasyfikacja błędu
+5️⃣ Bug Classification
 
-Severity: Critical – błąd backendu
+Severity: Critical — backend exception
 
-Priority: Blocker – blokuje proces biznesowy
+Priority: Blocker — business-critical flow is blocked
 
-Typ błędu: Backend exception / integration failure
+Type: Backend exception / integration failure
 
 Status: Reproducible
 
-8️⃣ Impact na proces biznesowy
+6️⃣ Business Impact
 
-❌ brak możliwości wykonania transferu numeru (MNP)
-❌ brak możliwości finalizacji zamówienia eSIM
-❌ niedziałająca integracja z msisdn-service
-❌ ryzyko zatrzymania sprzedaży dla całego wariantu oferty
+❌ Unable to perform number transfer (MNP)
+❌ Unable to complete eSIM activation/order
+❌ Broken integration with msisdn-service
+❌ Potential sales downtime for all MNP + eSIM orders
