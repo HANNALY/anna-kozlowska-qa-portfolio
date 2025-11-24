@@ -87,6 +87,9 @@ test(
     },
   );
 
+Test Purpose:
+Verifies the full order process for VOICE_STANDARD for a Polish customer using pickup point delivery, ensuring correct backend integration, pricing logic, and order assignment.
+
  Example Visual Test (VOICE_STANDARD)
 test.describe('[visual] @voice_standard @sim', () => {
   test.beforeEach(async ({ cartSetup }) => {
@@ -184,8 +187,6 @@ test.describe('[visual] @voice_standard @e-sim', () => {
 });
 
 Test Purpose:
-Verifies the full order process for VOICE_STANDARD for a Polish customer using pickup point delivery, ensuring correct backend integration, pricing logic, and order assignment.
-
-
+Verify the visual correctness of the full VOICE_STANDARD order flow for Virgin offers, both with physical SIM and eSIM, ensuring that the UI renders consistently at each step of the process.
 
 
