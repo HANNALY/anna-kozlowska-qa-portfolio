@@ -1,11 +1,11 @@
 # Bug Report – 500 Internal Server Error during MNP/Transfer (eSIM)
 
-Severity: Critical
-Priority: Blocker
-Status: Reproducible
-Environment: TEST
-Module: MNP / Number Transfer
-Component: msisdn-service
+- Severity: Critical
+- Priority: Blocker
+- Status: Reproducible
+- Environment: TEST
+- Module: MNP / Number Transfer
+- Component: msisdn-service
 
 📝 Summary
 
