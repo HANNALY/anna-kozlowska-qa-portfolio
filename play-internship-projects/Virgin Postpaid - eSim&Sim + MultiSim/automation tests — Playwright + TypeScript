@@ -1,10 +1,8 @@
- 🔹 Automation Tests — Playwright + TypeScript
-
-This repository contains end-to-end automated tests for **Virgin** offers in the VirginMobile.pl via the play.pl web service, prepared in an Agile environment.
+This file contains end-to-end automated tests for **Virgin** offers in the VirginMobile.pl via the play.pl web service, prepared in an Agile environment.
 
 ---
 
-## ⚡ Test Coverage
+## Test Coverage
 - **VOICE_STANDARD** scenarios (subscription without device)  
 - Various delivery types:  
   - Courier to Address  
