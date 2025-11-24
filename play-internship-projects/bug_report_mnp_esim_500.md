@@ -7,10 +7,9 @@
 - Module: MNP / Number Transfer
 - Component: msisdn-service
 
-📝 Summary
+Summary
 
 During the MNP/Transfer process for a Mobile + eSIM offer, the backend returns a 500 Internal Server Error when calling the POST /msisdn/cases endpoint.
-This issue blocks the entire flow and prevents the user from completing the order.
 
 1️⃣ Request – Cart Creation (curl)
 curl -X 'POST' \
