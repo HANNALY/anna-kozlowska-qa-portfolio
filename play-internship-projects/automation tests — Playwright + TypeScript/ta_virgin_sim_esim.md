@@ -18,33 +18,33 @@ This file contains end-to-end automated tests for **Virgin** offers in the Virgi
 
 ## 📂 Repository Structure
 automation_tests/
- │
- ├─ tests/
- │   └─ virgin/
-│       ├─ voice_standard.spec.ts      # VOICE_STANDARD scenarios
-│       └─ e2e_purchase.spec.ts        # Additional E2E cases
+│
+├─ tests/
+│ └─ virgin/
+│ ├─ voice_standard.spec.ts # VOICE_STANDARD scenarios
+│ └─ e2e_purchase.spec.ts # Additional E2E cases
 │
 ├─ src/
-│   ├─ processes/
-│   │   └─ order.process.ts
-│   ├─ fixtures/
-│   │   └─ shop.fixture.ts
-│   ├─ pages/
-│   │   └─ order.cart.page.ts
-│   └─ enums/
-│       ├─ customer.types.ts
-│       ├─ delivery.ts
-│       ├─ payment.ts
-│       └─ process.types.ts
+│ ├─ processes/
+│ │ └─ order.process.ts
+│ ├─ fixtures/
+│ │ └─ shop.fixture.ts
+│ ├─ pages/
+│ │ └─ order.cart.page.ts
+│ └─ enums/
+│ ├─ customer.types.ts
+│ ├─ delivery.ts
+│ ├─ payment.ts
+│ └─ process.types.ts
 │
 ├─ test-data/
-│   └─ offers/
-│       └─ offers.virgin.data.ts       # Test data for Virgin offers
+│ └─ offers/
+│ └─ offers.virgin.data.ts # Test data for Virgin offers
 │
-├─ visual/                             # Visual regression tests
-│   └─ virgin/
+├─ visual/ # Visual regression tests
+│ └─ virgin/
 │
-├─ playwright.config.ts                # Playwright configuration
+├─ playwright.config.ts # Playwright configuration
 └─ README.md
 ---
 
