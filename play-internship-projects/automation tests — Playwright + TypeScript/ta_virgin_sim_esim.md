@@ -64,7 +64,8 @@ Run tests on Mobile Chrome:
 bash
 Skopiuj kod
 npx playwright test --project=Mobile_Chrome
- Example Test (VOICE_STANDARD - Pickup Point)
+
+ 🚀 Example Test (VOICE_STANDARD - Pickup Point)
 
 test.describe('@voice_standard @virgin without device', () => {
   test.beforeEach(async ({ cartSetup }) => {
@@ -87,7 +88,8 @@ test(
 Test Purpose:
 Verifies the full order process for VOICE_STANDARD for a Polish customer using pickup point delivery, ensuring correct backend integration, pricing logic, and order assignment.
 
- Example Visual Test (VOICE_STANDARD)
+🚀 Example Visual Test (VOICE_STANDARD)
+
 test.describe('[visual] @voice_standard @sim', () => {
   test.beforeEach(async ({ cartSetup }) => {
     await cartSetup(VOICE_STANDARD_VIRGIN);
