@@ -18,8 +18,8 @@ This file contains end-to-end automated tests for **Virgin** offers in the Virgi
 
 ## 📂 Repository Structure
 automation_tests/
-│
-├─ tests/
+  │
+  ├─ tests/
 │ └─ virgin/
 │ ├─ voice_standard.spec.ts # VOICE_STANDARD scenarios
 │ └─ e2e_purchase.spec.ts # Additional E2E cases
