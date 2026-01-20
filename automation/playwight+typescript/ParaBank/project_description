@@ -1,1 +1,29 @@
+parabank-playwright/
+│
+├─ tests/
+│   ├─ auth/
+│   │   └─ login.spec.ts
+│   ├─ accounts/
+│   │   └─ open-account.spec.ts
+│   └─ transfers/
+│       └─ transfer.spec.ts
+│
+├─ pages/
+│   ├─ Register.ts
+|   ├─ LoginPage.ts
+│   ├─ AccountsPage.ts
+│   └─ TransferPage.ts
+│
+├─ fixtures/
+│   └─ test-fixtures.ts
+│
+├─ data/
+│   └─ users.json
+│
+├─ utils/
+│   └─ helpers.ts
+│
+├─ playwright.config.ts
+├─ package.json
+└─ README.md
 
