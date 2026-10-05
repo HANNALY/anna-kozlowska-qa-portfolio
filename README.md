@@ -2,9 +2,9 @@
 
 Hi there 👋 I'm Anna.
 
-I am a Software Tester with over a year of experience in manual testing, currently expanding my expertise toward test automation. I began my QA journey at Mate Academy, where I built strong fundamentals in manual testing and Java. Today, I am developing my skills further in a corporate environment as a QA Intern at Play.
+I am a Software Tester with over a year of experience in manual testing, currently expanding my expertise toward test automation. I began my QA journey at Mate Academy, where I built strong fundamentals in manual testing and JS. Developed my QA skills in a corporate environment during my internship as a QA Intern at Play
 
-On a daily basis, I create test cases, plan tests, and report bugs while working in an Agile environment using tools such as JIRA and Confluence. I focus strongly on quality, effective team communication, and continuous technical growth.
+On a daily basis, I created test cases, plan tests, and report bugs while working in an Agile environment using tools such as JIRA and Confluence. I focused strongly on quality, effective team communication, and continuous technical growth.
 
 I also have experience working with relational databases and SQL (SQL Server Management Studio), which I gained during my Big Data Management studies. My goal is to continue developing in the areas of test automation and data analysis.
 
@@ -20,8 +20,8 @@ In my free time, I enjoy spending time with my family, playing the guitar, trave
 - Knowledge of SDLC, STLC, Bug life cycle, Waterfall, Agile concepts knowledge (Scrum, Kanban)
 
 🤖 Automation testing
-- (Postman, Swagger)                       🟢🟢🟢🟢🟢🟢⚪⚪⚪⚪
-- TypeScript + Playwright               🟢🟢🟢⚪⚪⚪⚪⚪⚪⚪
+- (Postman, Swagger)          🟢🟢🟢🟢🟢🟢⚪⚪⚪⚪
+- TypeScript + Playwright     🟢🟢🟢⚪⚪⚪⚪⚪⚪⚪
 - Python (Selenium Webdriver) 🟢⚪⚪⚪⚪⚪⚪⚪⚪⚪
   
 🧰 Tools
