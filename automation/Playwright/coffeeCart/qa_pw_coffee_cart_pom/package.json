@@ -9,7 +9,10 @@
   "devDependencies": {
     "@playwright/test": "^1"
   },
-  "scripts": {},
+  "scripts": {
+    "test": "playwright test",
+    "typecheck": "tsc --noEmit"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC"
