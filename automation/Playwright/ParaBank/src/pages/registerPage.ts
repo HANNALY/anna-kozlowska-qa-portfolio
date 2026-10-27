@@ -2,8 +2,8 @@ import { type Locator, type Page } from '@playwright/test';
 import { type RegistrationData } from '../test-data/registerFormData';
 
 export class RegisterPage {
-  page: Page;
-  firstName: Locator;
+    page: Page;
+    firstName: Locator;
     lastName: Locator;
     address: Locator;
     city: Locator;
@@ -30,7 +30,7 @@ export class RegisterPage {
     this.password = page.locator('input[name="customer.password"]');
     this.confirmPassword = page.locator('input[name="repeatedPassword"]');
     this.registerButton = page.getByRole('button', { name: 'Register' });
-  } 
+  }
 
   async fillRegistrationForm(data: RegistrationData) {
     await this.firstName.fill(data.firstName);
