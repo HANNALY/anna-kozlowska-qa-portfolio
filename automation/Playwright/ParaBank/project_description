@@ -2,9 +2,10 @@ parabank-playwright/
 │
 ├─ tests/
 │   ├─ auth/
-│   │   └─ login.spec.ts
+│   │   └─ loginForm.spec.ts
+│   │   └─ registerForm.spec.ts
 │   ├─ accounts/
-│   │   └─ open-account.spec.ts
+│   │   └─ openAccount.spec.ts
 │   └─ transfers/
 │       └─ transfer.spec.ts
 │

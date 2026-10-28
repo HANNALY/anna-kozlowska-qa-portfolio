@@ -1,6 +1,6 @@
 
-import { test, expect } from '../src/fixtures/fixtures';
-import { registrationData } from '../src/test-data/registerFormData';
+import { test, expect } from '../../src/fixtures/fixtures';
+import { registrationData } from '../../src/test-data/registerFormData';
 
 test('should handle mocked registration response', async ({ page, mockedRegisterPage }) => {
   await mockedRegisterPage.fillRegistrationForm(registrationData);
