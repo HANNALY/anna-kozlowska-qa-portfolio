@@ -1,30 +1,29 @@
-parabank-playwright/
-│
-├─ tests/
-│   ├─ auth/
-│   │   └─ loginForm.spec.ts
-│   │   └─ registerForm.spec.ts
-│   ├─ accounts/
-│   │   └─ openAccount.spec.ts
-│   └─ transfers/
-│       └─ transfer.spec.ts
-│
-├─ pages/
-│   ├─ Register.ts
-|   ├─ LoginPage.ts
-│   ├─ AccountsPage.ts
-│   └─ TransferPage.ts
-│
-├─ fixtures/
-│   └─ test-fixtures.ts
-│
-├─ data/
-│   └─ users.json
-│
-├─ utils/
-│   └─ helpers.ts
-│
-├─ playwright.config.ts
-├─ package.json
-└─ README.md
-
+ParaBank/
+├── src/
+│   ├── fixtures/
+│   │   └── fixtures.ts
+│   ├── mocks/
+│   │   └── registrationMock.ts
+│   ├── pages/
+│   │   ├── loginPage.ts
+│   │   ├── openAccountPage.ts
+│   │   ├── registerPage.ts
+│   │   └── transferPage.ts
+│   └── test-data/
+│       ├── loginFormData.ts
+│       └── registerFormData.ts
+├── tests/
+│   ├── accounts/
+│   │   └── openAccount.spec.ts
+│   ├── auth/
+│   │   ├── loginForm.spec.ts
+│   │   └── registerForm.spec.ts
+│   └── transfers/
+│       └── transfer.spec.ts
+├── playwright-report/
+├── test-results/
+├── .gitignore
+├── package.json
+├── package-lock.json
+├── playwright.config.ts
+└── project_description
