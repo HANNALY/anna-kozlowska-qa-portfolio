@@ -45,16 +45,19 @@ jobs:
 
       - name: Upload HTML report
         if: ${{ !cancelled() }}
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v6
         with:
           name: coffee-cart-playwright-report
           path: automation/Playwright/qa_pw_coffee_cart_pom_ts/playwright-report/
+          if-no-files-found: warn
           retention-days: 14
 
       - name: Upload test results and traces
         if: ${{ !cancelled() }}
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v6
         with:
           name: coffee-cart-test-results
           path: automation/Playwright/qa_pw_coffee_cart_pom_ts/test-results/
+          # Playwright may not create this folder when all tests pass.
+          if-no-files-found: ignore
           retention-days: 7
