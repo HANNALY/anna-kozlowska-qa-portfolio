@@ -2,7 +2,7 @@
 
 Hi there 👋 I'm Anna.
 
-I am a Software Tester with 2 year of experience in manual testing, currently expanding my expertise toward test automation. I began my QA journey at Mate Academy, where I built strong fundamentals in manual testing and JS. Developed my QA skills in a corporate environment during my internship as a QA Intern at Play
+I am a Software Tester with 2 years of experience in manual testing, currently expanding my expertise toward test automation. I began my QA journey at Mate Academy, where I built strong fundamentals in manual testing and JS. Developed my QA skills in a corporate environment during my internship as a QA Intern at Play
 
 On a daily basis, I created test cases, plan tests, and reported bugs while working in an Agile environment using tools such as JIRA and Confluence. I focused strongly on quality, effective team communication, and continuous technical growth.
 
