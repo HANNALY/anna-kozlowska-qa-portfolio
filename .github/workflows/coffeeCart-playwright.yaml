@@ -1,3 +1,4 @@
+
 name: Coffee Cart - Playwright Tests
 
 on:
@@ -5,10 +6,14 @@ on:
     branches: [main]
     paths:
       - "automation/Playwright/qa_pw_coffee_cart_pom_ts/**"
+      - "automation/Playwright/ai-qa-agent/**"
+      - ".github/workflows/coffeeCart-playwright.yaml"
   pull_request:
     branches: [main]
     paths:
       - "automation/Playwright/qa_pw_coffee_cart_pom_ts/**"
+      - "automation/Playwright/ai-qa-agent/**"
+      - ".github/workflows/coffeeCart-playwright.yaml"
   workflow_dispatch:
 
 permissions:
@@ -16,7 +21,7 @@ permissions:
 
 jobs:
   test:
-    name: Run UI and API tests
+    name: Run UI, API and AI QA analysis
     runs-on: ubuntu-latest
 
     defaults:
@@ -41,10 +46,12 @@ jobs:
         run: npx playwright install --with-deps chromium
 
       - name: Run Playwright tests
+        id: playwright_tests
         run: npm test
+        continue-on-error: true
 
       - name: Upload HTML report
-        if: ${{ !cancelled() }}
+        if: always()
         uses: actions/upload-artifact@v6
         with:
           name: coffee-cart-playwright-report
@@ -53,11 +60,46 @@ jobs:
           retention-days: 14
 
       - name: Upload test results and traces
-        if: ${{ !cancelled() }}
+        if: always()
         uses: actions/upload-artifact@v6
         with:
           name: coffee-cart-test-results
-          path: automation/Playwright/qa_pw_coffee_cart_pom_ts/test-results/
-          # Playwright may not create this folder when all tests pass.
-          if-no-files-found: ignore
-          retention-days: 7
+          path: |
+            automation/Playwright/qa_pw_coffee_cart_pom_ts/test-results/
+            automation/Playwright/qa_pw_coffee_cart_pom_ts/reports/test-results.json
+          if-no-files-found: warn
+          retention-days: 14
+
+      - name: Install AI QA Agent dependencies
+        id: install_ai_agent
+        if: always()
+        working-directory: automation/Playwright/ai-qa-agent
+        run: npm ci
+
+      - name: Analyze Coffee Cart test results
+        id: analyze
+        if: always() && steps.install_ai_agent.outcome == 'success'
+        working-directory: automation/Playwright/ai-qa-agent
+        run: npm run analyze
+        env:
+          QA_REPORT_PATH: ../qa_pw_coffee_cart_pom_ts/reports/test-results.json
+
+      - name: Upload AI QA analysis
+        if: always()
+        uses: actions/upload-artifact@v6
+        with:
+          name: coffee-cart-ai-qa-analysis
+          path: automation/Playwright/ai-qa-agent/reports/qa-analysis.json
+          if-no-files-found: warn
+          retention-days: 14
+
+      - name: Check pipeline result
+        if: always()
+        run: |
+          if [ "${{ steps.playwright_tests.outcome }}" != "success" ] || \
+             [ "${{ steps.install_ai_agent.outcome }}" != "success" ] || \
+             [ "${{ steps.analyze.outcome }}" != "success" ]; then
+            echo "Playwright tests or AI QA analysis failed."
+            exit 1
+          fi
+          echo "Playwright tests and AI QA analysis completed successfully."
