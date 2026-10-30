@@ -1,0 +1,89 @@
+{
+  "generatedAt": "2026-10-30T17:51:30.152Z",
+  "source": "C:\\Users\\allak\\Desktop\\Playwright\\anna-kozlowska-qa-portfolio\\automation\\Playwright\\ParaBank\\reports\\test-results.json",
+  "total": 6,
+  "passed": 5,
+  "failed": 1,
+  "skipped": 0,
+  "flaky": 0,
+  "classificationSummary": {
+    "NONE": 5,
+    "ASSERTION_ERROR": 1
+  },
+  "tests": [
+    {
+      "title": "should open account form successfully and choose account type and from account",
+      "file": "accounts/openAccount.spec.ts",
+      "line": 4,
+      "status": "passed",
+      "durationMs": 7263,
+      "errors": [],
+      "classification": {
+        "category": "NONE",
+        "reason": "No test failure detected."
+      }
+    },
+    {
+      "title": "should fill login form successfully",
+      "file": "auth/loginForm.spec.ts",
+      "line": 5,
+      "status": "passed",
+      "durationMs": 2350,
+      "errors": [],
+      "classification": {
+        "category": "NONE",
+        "reason": "No test failure detected."
+      }
+    },
+    {
+      "title": "should logout successfully",
+      "file": "auth/loginForm.spec.ts",
+      "line": 10,
+      "status": "passed",
+      "durationMs": 2835,
+      "errors": [],
+      "classification": {
+        "category": "NONE",
+        "reason": "No test failure detected."
+      }
+    },
+    {
+      "title": "should handle mocked registration response",
+      "file": "auth/registerForm.spec.ts",
+      "line": 5,
+      "status": "passed",
+      "durationMs": 1631,
+      "errors": [],
+      "classification": {
+        "category": "NONE",
+        "reason": "No test failure detected."
+      }
+    },
+    {
+      "title": "AI Agent should detect an intentional assertion failure",
+      "file": "diagnostics/intentionalFailure.spec.ts",
+      "line": 3,
+      "status": "failed",
+      "durationMs": 9,
+      "errors": [
+        "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m2\u001b[39m\nReceived: \u001b[31m1\u001b[39m\n\n\u001b[0m \u001b[90m 2 |\u001b[39m\n \u001b[90m 3 |\u001b[39m test(\u001b[32m'AI Agent should detect an intentional assertion failure'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 4 |\u001b[39m   expect(\u001b[35m1\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m2\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 5 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\allak\\Desktop\\Playwright\\anna-kozlowska-qa-portfolio\\automation\\Playwright\\ParaBank\\tests\\diagnostics\\intentionalFailure.spec.ts:4:13\u001b[22m"
+      ],
+      "classification": {
+        "category": "ASSERTION_ERROR",
+        "reason": "An expected value or application state did not match the actual result."
+      }
+    },
+    {
+      "title": "should transfer funds successfully",
+      "file": "transfers/transfer.spec.ts",
+      "line": 5,
+      "status": "passed",
+      "durationMs": 3866,
+      "errors": [],
+      "classification": {
+        "category": "NONE",
+        "reason": "No test failure detected."
+      }
+    }
+  ]
+}

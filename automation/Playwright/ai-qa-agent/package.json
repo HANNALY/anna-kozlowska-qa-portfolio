@@ -1,0 +1,29 @@
+{
+  "name": "ai-qa-agent",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "analyze": "tsx src/analyzer/analyzeReport.ts",
+    "ai:analyze": "tsx src/agent/aiAnalyzer.ts",
+    "analyze:coffee-cart": "cross-env QA_REPORT_PATH=../qa_pw_coffee_cart_pom_ts/reports/test-results.json npm run analyze && npm run ai:analyze",
+    "run:coffee-cart": "tsx src/agent/runCoffeeCartPipeline.ts",
+    "analyze:parabank": "cross-env QA_REPORT_PATH=../ParaBank/reports/test-results.json npm run analyze && npm run ai:analyze",
+    "run:parabank": "tsx src/agent/runParaBankPipeline.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^18.0.9",
+    "openai": "^6.49.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.64.1",
+    "@types/node": "^26.6.6",
+    "cross-env": "^10.1.0",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}

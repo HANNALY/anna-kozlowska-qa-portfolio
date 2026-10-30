@@ -1,0 +1,234 @@
+{
+  "generatedAt": "2026-10-30T16:25:38.455Z",
+  "source": "reports/test-results.json",
+  "total": 18,
+  "passed": 18,
+  "failed": 0,
+  "skipped": 0,
+  "flaky": 0,
+  "classificationSummary": {
+    "ASSERTION_ERROR": 0,
+    "LOCATOR_ERROR": 0,
+    "API_ERROR": 0,
+    "TIMEOUT_ERROR": 0,
+    "UNKNOWN_ERROR": 0
+  },
+  "tests": [
+    {
+      "title": "GET list.json returns HTTP 200",
+      "file": "api/addedToCartApi.spec.ts",
+      "line": 19,
+      "status": "passed",
+      "durationMs": 603,
+      "errors": [],
+      "classification": {
+        "category": "NONE",
+        "reason": "No failure reported for this test result."
+      }
+    },
+    {
+      "title": "returns a list of coffee products",
+      "file": "api/addedToCartApi.spec.ts",
+      "line": 26,
+      "status": "passed",
+      "durationMs": 113,
+      "errors": [],
+      "classification": {
+        "category": "NONE",
+        "reason": "No failure reported for this test result."
+      }
+    },
+    {
+      "title": "Cappuccino has the expected price and recipe",
+      "file": "api/addedToCartApi.spec.ts",
+      "line": 34,
+      "status": "passed",
+      "durationMs": 154,
+      "errors": [],
+      "classification": {
+        "category": "NONE",
+        "reason": "No failure reported for this test result."
+      }
+    },
+    {
+      "title": "discounted Mocha has the expected price",
+      "file": "api/addedToCartApi.spec.ts",
+      "line": 52,
+      "status": "passed",
+      "durationMs": 119,
+      "errors": [],
+      "classification": {
+        "category": "NONE",
+        "reason": "No failure reported for this test result."
+      }
+    },
+    {
+      "title": "Cappuccino correctly added to the Cart",
+      "file": "ui/addToCart/cappuccinoAddedToCart.spec.ts",
+      "line": 4,
+      "status": "passed",
+      "durationMs": 11494,
+      "errors": [],
+      "classification": {
+        "category": "NONE",
+        "reason": "No failure reported for this test result."
+      }
+    },
+    {
+      "title": "Cappuccino cost is added to Total on menu page",
+      "file": "ui/addToCart/cappuccinoAddedToTotal.spec.ts",
+      "line": 4,
+      "status": "passed",
+      "durationMs": 724,
+      "errors": [],
+      "classification": {
+        "category": "NONE",
+        "reason": "No failure reported for this test result."
+      }
+    },
+    {
+      "title": "Espresso correctly added to the Cart",
+      "file": "ui/addToCart/espressoAddedToCart.spec.ts",
+      "line": 4,
+      "status": "passed",
+      "durationMs": 672,
+      "errors": [],
+      "classification": {
+        "category": "NONE",
+        "reason": "No failure reported for this test result."
+      }
+    },
+    {
+      "title": "Espresso cost is added to Total on menu page",
+      "file": "ui/addToCart/espressoAddedToTotal.spec.ts",
+      "line": 4,
+      "status": "passed",
+      "durationMs": 737,
+      "errors": [],
+      "classification": {
+        "category": "NONE",
+        "reason": "No failure reported for this test result."
+      }
+    },
+    {
+      "title": "Cappuccino removed from Cart after clicking Remove",
+      "file": "ui/emptyCart/cappuccinoRemovedFromCart.spec.ts",
+      "line": 3,
+      "status": "passed",
+      "durationMs": 746,
+      "errors": [],
+      "classification": {
+        "category": "NONE",
+        "reason": "No failure reported for this test result."
+      }
+    },
+    {
+      "title": "Empty cart shows correct message",
+      "file": "ui/emptyCart/emptyCartShowsMessage.spec.ts",
+      "line": 3,
+      "status": "passed",
+      "durationMs": 731,
+      "errors": [],
+      "classification": {
+        "category": "NONE",
+        "reason": "No failure reported for this test result."
+      }
+    },
+    {
+      "title": "Espresso removed from Cart after clicking Remove",
+      "file": "ui/emptyCart/espressoRemovedFromCart.spec.ts",
+      "line": 3,
+      "status": "passed",
+      "durationMs": 1021,
+      "errors": [],
+      "classification": {
+        "category": "NONE",
+        "reason": "No failure reported for this test result."
+      }
+    },
+    {
+      "title": "Cappuccino cup has correct cost",
+      "file": "ui/menuTests/cappuccinoHasCorrectCost.spec.ts",
+      "line": 4,
+      "status": "passed",
+      "durationMs": 1204,
+      "errors": [],
+      "classification": {
+        "category": "NONE",
+        "reason": "No failure reported for this test result."
+      }
+    },
+    {
+      "title": "Espresso cup has correct cost",
+      "file": "ui/menuTests/espressoHasCorrectCost.spec.ts",
+      "line": 4,
+      "status": "passed",
+      "durationMs": 810,
+      "errors": [],
+      "classification": {
+        "category": "NONE",
+        "reason": "No failure reported for this test result."
+      }
+    },
+    {
+      "title": "Discounted Mocha added to the Cart after promo accepting",
+      "file": "ui/promoTests/mochaAddedToCartOnPromoAccept.spec.ts",
+      "line": 4,
+      "status": "passed",
+      "durationMs": 1575,
+      "errors": [],
+      "classification": {
+        "category": "NONE",
+        "reason": "No failure reported for this test result."
+      }
+    },
+    {
+      "title": "Discounted Mocha added to the Cart after promo rejecting",
+      "file": "ui/promoTests/mochaNotAddedToCartOnPromoDecline.spec.ts",
+      "line": 3,
+      "status": "passed",
+      "durationMs": 1089,
+      "errors": [],
+      "classification": {
+        "category": "NONE",
+        "reason": "No failure reported for this test result."
+      }
+    },
+    {
+      "title": "Cart cleaned after page refresh",
+      "file": "ui/refreshCart/cartCleanedAfterPageRefresh.spec.ts",
+      "line": 3,
+      "status": "passed",
+      "durationMs": 1401,
+      "errors": [],
+      "classification": {
+        "category": "NONE",
+        "reason": "No failure reported for this test result."
+      }
+    },
+    {
+      "title": "Cart updated correctly after clicking minus for drinks",
+      "file": "ui/removeFromCart/cartUpdatedAfterClickingMinusButton.spec.ts",
+      "line": 3,
+      "status": "passed",
+      "durationMs": 950,
+      "errors": [],
+      "classification": {
+        "category": "NONE",
+        "reason": "No failure reported for this test result."
+      }
+    },
+    {
+      "title": "Cart updates correctly after adding one more of each drink",
+      "file": "ui/updateCart/cartUpdatedAfterClickingPlusButton.spec.ts",
+      "line": 4,
+      "status": "passed",
+      "durationMs": 714,
+      "errors": [],
+      "classification": {
+        "category": "NONE",
+        "reason": "No failure reported for this test result."
+      }
+    }
+  ]
+}

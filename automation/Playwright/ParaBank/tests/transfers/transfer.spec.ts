@@ -7,7 +7,7 @@ test.describe('Transfer Page', () => {
     await loginPage.clickLoginButton();
     await expect(page).toHaveURL(/overview/);
     await transferPage.clickTransferFundsLink();
-    await transferPage.fillTransferForm('100', 0, 3);
+    await transferPage.fillTransferForm('100', 0, 0);
     await transferPage.clickTransferButton();
 
     await expect(page.locator('#rightPanel')).toContainText('Transfer Complete!');
