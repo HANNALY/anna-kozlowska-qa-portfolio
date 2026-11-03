@@ -20,8 +20,8 @@ ParaBank/
 │   ├── auth/
 │   │   ├── loginForm.spec.ts
 │   │   └── registerForm.spec.ts
-│   └── bill/
-│       └── billPayService.spec.ts
+│   ├── bill/
+│   │   └── billPayService.spec.ts
 │   └── transfers/
 │       └── transfer.spec.ts
 ├── playwright-report/
