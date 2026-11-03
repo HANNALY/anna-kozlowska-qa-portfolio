@@ -5,7 +5,9 @@
   "directories": {
     "test": "tests"
   },
-  "scripts": {},
+  "scripts": {
+     "run:parabank": "playwright test"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",

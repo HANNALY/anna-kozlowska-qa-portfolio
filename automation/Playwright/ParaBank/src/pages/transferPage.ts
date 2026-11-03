@@ -2,7 +2,6 @@ import {type Page, Locator} from '@playwright/test';
 
 export class TransferPage {
     page: Page; 
-    transferFundsForm: Locator;
     amountInput: Locator;
     fromAccountDropdown: Locator
     toAccountDropdown: Locator;
@@ -10,15 +9,10 @@ export class TransferPage {
 
     constructor(page: Page) {
         this.page = page;
-        this.transferFundsForm = page.getByRole('link', { name: 'Transfer Funds' });
         this.amountInput = page.locator('#amount');
         this.fromAccountDropdown = page.locator('#fromAccountId');
         this.toAccountDropdown = page.locator('#toAccountId');
         this.transferButton = page.getByRole('button', { name: 'Transfer' });
-    }
-
-    async clickTransferFundsLink() {
-        await this.transferFundsForm.click();
     }
 
     async fillTransferForm(amount: string, fromAccountIndex: number, toAccountIndex: number) {

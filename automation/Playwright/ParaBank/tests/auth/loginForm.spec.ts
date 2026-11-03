@@ -7,9 +7,9 @@ test('should fill login form successfully', async ({ loginPage }) => {
     await loginPage.clickLoginButton();
 });
 
-test('should logout successfully', async ({ loginPage }) => {
+test('should logout successfully', async ({ loginPage, accountServicesPage }) => {
     await loginPage.fillLoginForm(loginData);
     await loginPage.clickLoginButton();
-    await loginPage.clickLogoutLink();
+    await accountServicesPage.clickLogout();
 });
 });

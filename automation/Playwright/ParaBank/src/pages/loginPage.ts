@@ -6,14 +6,12 @@ export class LoginPage {
     login_username: Locator;                                      
     login_password: Locator;
     loginButton: Locator;   
-    logout: Locator; 
 
     constructor(page: Page) {
         this.page = page;
         this.login_username = page.locator('input[name="username"]');   
         this.login_password = page.locator('input[name="password"]');   
         this.loginButton = page.getByRole('button', { name: 'Log In' });
-        this.logout = page.getByRole('link', { name: 'Log Out' });
           }                                                             
                                                                         
     async fillLoginForm(data: LoginData) {
@@ -25,7 +23,4 @@ export class LoginPage {
         await this.loginButton.click();
     }
 
-    async clickLogoutLink() {
-        await this.logout.click();
-    }
 }

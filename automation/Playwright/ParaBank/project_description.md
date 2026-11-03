@@ -6,6 +6,8 @@ ParaBank/
 │   │   └── registrationMock.ts
 │   ├── pages/
 │   │   ├── loginPage.ts
+│   │   ├── accountServicePage.ts
+│   │   ├── billPaymentPage.ts
 │   │   ├── openAccountPage.ts
 │   │   ├── registerPage.ts
 │   │   └── transferPage.ts
@@ -18,6 +20,8 @@ ParaBank/
 │   ├── auth/
 │   │   ├── loginForm.spec.ts
 │   │   └── registerForm.spec.ts
+│   └── bill/
+│       └── billPayService.spec.ts
 │   └── transfers/
 │       └── transfer.spec.ts
 ├── playwright-report/
@@ -26,4 +30,4 @@ ParaBank/
 ├── package.json
 ├── package-lock.json
 ├── playwright.config.ts
-└── project_description
+└── project_description.md

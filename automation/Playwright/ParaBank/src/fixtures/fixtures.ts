@@ -4,6 +4,8 @@ import { LoginPage } from '../pages/loginPage';
 import { OpenAccountPage } from '../pages/openAccountPage';
 import { mockRegistrationSuccess } from '../mocks/registrationMock';
 import { TransferPage } from '../pages/transferPage';
+import { BillPaymentPage } from '../pages/billPaymentPage';
+import { AccountServicesPage } from '../pages/accountServicesPage';
 
 type ParaBankFixtures = {
   registerPage: RegisterPage;
@@ -11,6 +13,8 @@ type ParaBankFixtures = {
   openAccountPage: OpenAccountPage;
   mockedRegisterPage: RegisterPage;
   transferPage: TransferPage;
+  billPaymentPage: BillPaymentPage;
+  accountServicesPage: AccountServicesPage;
 };
 
 export const test = base.extend<ParaBankFixtures>({
@@ -27,8 +31,14 @@ export const test = base.extend<ParaBankFixtures>({
     await page.goto('/parabank/register.htm');
     await use(new RegisterPage(page));
   },
+  accountServicesPage: async ({ page }, use) => {
+    await use(new AccountServicesPage(page));
+  },
   openAccountPage: async ({ page }, use) => {
     await use(new OpenAccountPage(page));
+  },
+  billPaymentPage: async ({ page }, use) => {
+    await use(new BillPaymentPage(page));
   },
   transferPage: async ({ page }, use) => {
     await use(new TransferPage(page));

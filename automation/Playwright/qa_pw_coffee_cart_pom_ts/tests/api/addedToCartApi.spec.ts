@@ -1,4 +1,3 @@
-
 import { test, expect } from '@playwright/test';
 
 const API_URL = 'https://coffee-cart.app/list.json';

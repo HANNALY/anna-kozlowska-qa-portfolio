@@ -1,10 +1,6 @@
 {
   "config": {
-    "argv": [
-      "C:\\Program Files\\nodejs\\node.exe",
-      "C:\\Users\\allak\\Desktop\\Playwright\\anna-kozlowska-qa-portfolio\\automation\\Playwright\\ParaBank\\node_modules\\@playwright\\test\\cli.js",
-      "test"
-    ],
+    "argv": [],
     "configFile": "C:\\Users\\allak\\Desktop\\Playwright\\anna-kozlowska-qa-portfolio\\automation\\Playwright\\ParaBank\\playwright.config.ts",
     "rootDir": "C:/Users/allak/Desktop/Playwright/anna-kozlowska-qa-portfolio/automation/Playwright/ParaBank/tests",
     "failOnFlakyTests": false,
@@ -56,7 +52,11 @@
         "timeout": 30000,
         "use": {
           "baseURL": "https://parabank.parasoft.com",
-          "trace": "on-first-retry",
+          "trace": {
+            "mode": "on",
+            "sources": false,
+            "live": true
+          },
           "screenshot": "only-on-failure",
           "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.8078.4 Safari/537.36",
           "viewport": {
@@ -103,8 +103,8 @@
     },
     "shard": null,
     "tags": [],
-    "updateSnapshots": "default",
-    "updateSourceMethod": "patch",
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "3way",
     "version": "1.64.1",
     "workers": 1,
     "webServer": null
@@ -129,17 +129,23 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 0,
+                  "workerIndex": 6,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 7263,
+                  "duration": 6163,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-30T17:50:58.859Z",
+                  "startTime": "2026-11-03T22:30:00.827Z",
                   "annotations": [],
-                  "attachments": []
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\allak\\Desktop\\Playwright\\anna-kozlowska-qa-portfolio\\automation\\Playwright\\ParaBank\\test-results\\accounts-openAccount-shoul-75d50-count-type-and-from-account-chromium\\trace.zip"
+                    }
+                  ]
                 }
               ],
               "status": "expected"
@@ -178,17 +184,23 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
+                      "workerIndex": 6,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2350,
+                      "duration": 2986,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-30T17:51:06.870Z",
+                      "startTime": "2026-11-03T22:30:08.213Z",
                       "annotations": [],
-                      "attachments": []
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\allak\\Desktop\\Playwright\\anna-kozlowska-qa-portfolio\\automation\\Playwright\\ParaBank\\test-results\\auth-loginForm-Login-Form--dea3d-ill-login-form-successfully-chromium\\trace.zip"
+                        }
+                      ]
                     }
                   ],
                   "status": "expected"
@@ -212,17 +224,23 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
+                      "workerIndex": 6,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2835,
+                      "duration": 4270,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-30T17:51:09.258Z",
+                      "startTime": "2026-11-03T22:30:11.418Z",
                       "annotations": [],
-                      "attachments": []
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\allak\\Desktop\\Playwright\\anna-kozlowska-qa-portfolio\\automation\\Playwright\\ParaBank\\test-results\\auth-loginForm-Login-Form-should-logout-successfully-chromium\\trace.zip"
+                        }
+                      ]
                     }
                   ],
                   "status": "expected"
@@ -256,17 +274,23 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 0,
+                  "workerIndex": 6,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1631,
+                  "duration": 3048,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-30T17:51:12.123Z",
+                  "startTime": "2026-11-03T22:30:16.004Z",
                   "annotations": [],
-                  "attachments": []
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\allak\\Desktop\\Playwright\\anna-kozlowska-qa-portfolio\\automation\\Playwright\\ParaBank\\test-results\\auth-registerForm-should-handle-mocked-registration-response-chromium\\trace.zip"
+                    }
+                  ]
                 }
               ],
               "status": "expected"
@@ -280,74 +304,59 @@
       ]
     },
     {
-      "title": "diagnostics\\intentionalFailure.spec.ts",
-      "file": "diagnostics/intentionalFailure.spec.ts",
+      "title": "bill\\billPayService.spec.ts",
+      "file": "bill/billPayService.spec.ts",
       "column": 0,
       "line": 0,
-      "specs": [
+      "specs": [],
+      "suites": [
         {
-          "title": "AI Agent should detect an intentional assertion failure",
-          "ok": false,
-          "tags": [],
-          "tests": [
+          "title": "Bill Payment Form",
+          "file": "bill/billPayService.spec.ts",
+          "line": 5,
+          "column": 6,
+          "specs": [
             {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
+              "title": "should fill bill payment form successfully",
+              "ok": true,
+              "tags": [],
+              "tests": [
                 {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "failed",
-                  "duration": 9,
-                  "error": {
-                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m2\u001b[39m\nReceived: \u001b[31m1\u001b[39m",
-                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m2\u001b[39m\nReceived: \u001b[31m1\u001b[39m\n    at C:\\Users\\allak\\Desktop\\Playwright\\anna-kozlowska-qa-portfolio\\automation\\Playwright\\ParaBank\\tests\\diagnostics\\intentionalFailure.spec.ts:4:13",
-                    "location": {
-                      "file": "C:\\Users\\allak\\Desktop\\Playwright\\anna-kozlowska-qa-portfolio\\automation\\Playwright\\ParaBank\\tests\\diagnostics\\intentionalFailure.spec.ts",
-                      "column": 13,
-                      "line": 4
-                    },
-                    "snippet": "\u001b[0m \u001b[90m 2 |\u001b[39m\n \u001b[90m 3 |\u001b[39m test(\u001b[32m'AI Agent should detect an intentional assertion failure'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 4 |\u001b[39m   expect(\u001b[35m1\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m2\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 5 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "C:\\Users\\allak\\Desktop\\Playwright\\anna-kozlowska-qa-portfolio\\automation\\Playwright\\ParaBank\\tests\\diagnostics\\intentionalFailure.spec.ts",
-                        "column": 13,
-                        "line": 4
-                      },
-                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m2\u001b[39m\nReceived: \u001b[31m1\u001b[39m\n\n\u001b[0m \u001b[90m 2 |\u001b[39m\n \u001b[90m 3 |\u001b[39m test(\u001b[32m'AI Agent should detect an intentional assertion failure'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 4 |\u001b[39m   expect(\u001b[35m1\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m2\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 5 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\allak\\Desktop\\Playwright\\anna-kozlowska-qa-portfolio\\automation\\Playwright\\ParaBank\\tests\\diagnostics\\intentionalFailure.spec.ts:4:13\u001b[22m"
-                    }
-                  ],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-10-30T17:51:13.785Z",
+                  "timeout": 30000,
                   "annotations": [],
-                  "attachments": [
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
                     {
-                      "name": "error-context",
-                      "contentType": "text/markdown",
-                      "path": "C:\\Users\\allak\\Desktop\\Playwright\\anna-kozlowska-qa-portfolio\\automation\\Playwright\\ParaBank\\test-results\\diagnostics-intentionalFai-bc424-tentional-assertion-failure-chromium\\error-context.md"
+                      "workerIndex": 6,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5801,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-03T22:30:19.429Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\allak\\Desktop\\Playwright\\anna-kozlowska-qa-portfolio\\automation\\Playwright\\ParaBank\\test-results\\bill-billPayService-Bill-P-94b94-l-payment-form-successfully-chromium\\trace.zip"
+                        }
+                      ]
                     }
                   ],
-                  "errorLocation": {
-                    "file": "C:\\Users\\allak\\Desktop\\Playwright\\anna-kozlowska-qa-portfolio\\automation\\Playwright\\ParaBank\\tests\\diagnostics\\intentionalFailure.spec.ts",
-                    "column": 13,
-                    "line": 4
-                  }
+                  "status": "expected"
                 }
               ],
-              "status": "unexpected"
+              "id": "89ad640e2ed1f814bc10-1079d1b440aa61c22db9",
+              "file": "bill/billPayService.spec.ts",
+              "line": 6,
+              "column": 9
             }
-          ],
-          "id": "38cfcf1e662449fb94b1-eb28109bf34694ff35dc",
-          "file": "diagnostics/intentionalFailure.spec.ts",
-          "line": 3,
-          "column": 5
+          ]
         }
       ]
     },
@@ -366,7 +375,7 @@
           "specs": [
             {
               "title": "should transfer funds successfully",
-              "ok": true,
+              "ok": false,
               "tags": [],
               "tests": [
                 {
@@ -377,20 +386,60 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 1,
+                      "workerIndex": 6,
                       "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 3866,
-                      "errors": [],
+                      "status": "failed",
+                      "duration": 3125,
+                      "error": {
+                        "message": "TypeError: accountServicesPage.clickTransferFundsLink is not a function",
+                        "stack": "TypeError: accountServicesPage.clickTransferFundsLink is not a function\n    at C:\\Users\\allak\\Desktop\\Playwright\\anna-kozlowska-qa-portfolio\\automation\\Playwright\\ParaBank\\tests\\transfers\\transfer.spec.ts:9:31",
+                        "location": {
+                          "file": "C:\\Users\\allak\\Desktop\\Playwright\\anna-kozlowska-qa-portfolio\\automation\\Playwright\\ParaBank\\tests\\transfers\\transfer.spec.ts",
+                          "column": 31,
+                          "line": 9
+                        },
+                        "snippet": "\u001b[0m \u001b[90m  7 |\u001b[39m     \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mclickLoginButton()\u001b[33m;\u001b[39m\n \u001b[90m  8 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveURL(\u001b[35m/overview/\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  9 |\u001b[39m     \u001b[36mawait\u001b[39m accountServicesPage\u001b[33m.\u001b[39mclickTransferFundsLink()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 10 |\u001b[39m     \u001b[36mawait\u001b[39m transferPage\u001b[33m.\u001b[39mfillTransferForm(\u001b[32m'100'\u001b[39m\u001b[33m,\u001b[39m \u001b[35m0\u001b[39m\u001b[33m,\u001b[39m \u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m     \u001b[36mawait\u001b[39m transferPage\u001b[33m.\u001b[39mclickTransferButton()\u001b[33m;\u001b[39m\n \u001b[90m 12 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\allak\\Desktop\\Playwright\\anna-kozlowska-qa-portfolio\\automation\\Playwright\\ParaBank\\tests\\transfers\\transfer.spec.ts",
+                            "column": 31,
+                            "line": 9
+                          },
+                          "message": "TypeError: accountServicesPage.clickTransferFundsLink is not a function\n\n\u001b[0m \u001b[90m  7 |\u001b[39m     \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mclickLoginButton()\u001b[33m;\u001b[39m\n \u001b[90m  8 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveURL(\u001b[35m/overview/\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  9 |\u001b[39m     \u001b[36mawait\u001b[39m accountServicesPage\u001b[33m.\u001b[39mclickTransferFundsLink()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 10 |\u001b[39m     \u001b[36mawait\u001b[39m transferPage\u001b[33m.\u001b[39mfillTransferForm(\u001b[32m'100'\u001b[39m\u001b[33m,\u001b[39m \u001b[35m0\u001b[39m\u001b[33m,\u001b[39m \u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m     \u001b[36mawait\u001b[39m transferPage\u001b[33m.\u001b[39mclickTransferButton()\u001b[33m;\u001b[39m\n \u001b[90m 12 |\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\allak\\Desktop\\Playwright\\anna-kozlowska-qa-portfolio\\automation\\Playwright\\ParaBank\\tests\\transfers\\transfer.spec.ts:9:31\u001b[22m"
+                        }
+                      ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-10-30T17:51:16.749Z",
+                      "startTime": "2026-11-03T22:30:25.641Z",
                       "annotations": [],
-                      "attachments": []
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\allak\\Desktop\\Playwright\\anna-kozlowska-qa-portfolio\\automation\\Playwright\\ParaBank\\test-results\\transfers-transfer-Transfe-b0036-transfer-funds-successfully-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\allak\\Desktop\\Playwright\\anna-kozlowska-qa-portfolio\\automation\\Playwright\\ParaBank\\test-results\\transfers-transfer-Transfe-b0036-transfer-funds-successfully-chromium\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\allak\\Desktop\\Playwright\\anna-kozlowska-qa-portfolio\\automation\\Playwright\\ParaBank\\test-results\\transfers-transfer-Transfe-b0036-transfer-funds-successfully-chromium\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\allak\\Desktop\\Playwright\\anna-kozlowska-qa-portfolio\\automation\\Playwright\\ParaBank\\tests\\transfers\\transfer.spec.ts",
+                        "column": 31,
+                        "line": 9
+                      }
                     }
                   ],
-                  "status": "expected"
+                  "status": "unexpected"
                 }
               ],
               "id": "c88fbc19316375a7fb00-dcee94f894beba6f37da",
@@ -405,8 +454,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-10-30T17:50:55.095Z",
-    "duration": 26110.665999999997,
+    "startTime": "2026-11-03T22:29:48.965Z",
+    "duration": 41209.75099999993,
     "expected": 5,
     "skipped": 0,
     "unexpected": 1,
