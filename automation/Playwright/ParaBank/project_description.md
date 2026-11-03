@@ -1,5 +1,5 @@
 ParaBank/
-├── src/
+```├── src/
 │   ├── fixtures/
 │   │   └── fixtures.ts
 │   ├── mocks/
@@ -30,4 +30,4 @@ ParaBank/
 ├── package.json
 ├── package-lock.json
 ├── playwright.config.ts
-└── project_description.md
+└── project_description.md```
