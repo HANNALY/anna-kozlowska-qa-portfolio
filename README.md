@@ -61,7 +61,30 @@ EDUCATION
 Book: “Zawód Tester” by Radosław Smilgin
 
 # Projekty QA https://github.com/HANNALY/anna-kozlowska-qa-portfolio/issues/1
+🤖 AI QA Agent — Separate Repository
 
+An independent AI-powered QA project developed and maintained in a separate GitHub repository, outside my main QA portfolio.
 
+Technologies:
 
+TypeScript
 
+Playwright
+
+Node.js
+
+Ollama (Gemma 2)
+
+Key features:
+
+Automated Playwright test execution
+
+AI-powered test failure analysis
+
+Error classification
+
+JSON and Markdown analysis reports
+
+Interactive QA dashboard
+
+🔒 Repository: Private (source code not publicly available)
