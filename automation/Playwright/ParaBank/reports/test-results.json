@@ -111,256 +111,6 @@
   },
   "suites": [
     {
-      "title": "accounts\\openAccount.spec.ts",
-      "file": "accounts/openAccount.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "should open account form successfully and choose account type and from account",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 6,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 6163,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-11-03T22:30:00.827Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "C:\\Users\\allak\\Desktop\\Playwright\\anna-kozlowska-qa-portfolio\\automation\\Playwright\\ParaBank\\test-results\\accounts-openAccount-shoul-75d50-count-type-and-from-account-chromium\\trace.zip"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "af145a02dcbfce096d6d-767970d1484b87d3e721",
-          "file": "accounts/openAccount.spec.ts",
-          "line": 4,
-          "column": 5
-        }
-      ]
-    },
-    {
-      "title": "auth\\loginForm.spec.ts",
-      "file": "auth/loginForm.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [],
-      "suites": [
-        {
-          "title": "Login Form",
-          "file": "auth/loginForm.spec.ts",
-          "line": 4,
-          "column": 6,
-          "specs": [
-            {
-              "title": "should fill login form successfully",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 6,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 2986,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-11-03T22:30:08.213Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "C:\\Users\\allak\\Desktop\\Playwright\\anna-kozlowska-qa-portfolio\\automation\\Playwright\\ParaBank\\test-results\\auth-loginForm-Login-Form--dea3d-ill-login-form-successfully-chromium\\trace.zip"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "4244b64ad5696ac19ef3-7e4f8f2dd5786fc086b6",
-              "file": "auth/loginForm.spec.ts",
-              "line": 5,
-              "column": 5
-            },
-            {
-              "title": "should logout successfully",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 6,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 4270,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-11-03T22:30:11.418Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "C:\\Users\\allak\\Desktop\\Playwright\\anna-kozlowska-qa-portfolio\\automation\\Playwright\\ParaBank\\test-results\\auth-loginForm-Login-Form-should-logout-successfully-chromium\\trace.zip"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "4244b64ad5696ac19ef3-f9adc1e092ded83b58a7",
-              "file": "auth/loginForm.spec.ts",
-              "line": 10,
-              "column": 5
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "auth\\registerForm.spec.ts",
-      "file": "auth/registerForm.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "should handle mocked registration response",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 6,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 3048,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-11-03T22:30:16.004Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "C:\\Users\\allak\\Desktop\\Playwright\\anna-kozlowska-qa-portfolio\\automation\\Playwright\\ParaBank\\test-results\\auth-registerForm-should-handle-mocked-registration-response-chromium\\trace.zip"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "7e590631fcd6bb186400-47e0edb8a9bc125f0faa",
-          "file": "auth/registerForm.spec.ts",
-          "line": 5,
-          "column": 5
-        }
-      ]
-    },
-    {
-      "title": "bill\\billPayService.spec.ts",
-      "file": "bill/billPayService.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [],
-      "suites": [
-        {
-          "title": "Bill Payment Form",
-          "file": "bill/billPayService.spec.ts",
-          "line": 5,
-          "column": 6,
-          "specs": [
-            {
-              "title": "should fill bill payment form successfully",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 6,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 5801,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-11-03T22:30:19.429Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "C:\\Users\\allak\\Desktop\\Playwright\\anna-kozlowska-qa-portfolio\\automation\\Playwright\\ParaBank\\test-results\\bill-billPayService-Bill-P-94b94-l-payment-form-successfully-chromium\\trace.zip"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "89ad640e2ed1f814bc10-1079d1b440aa61c22db9",
-              "file": "bill/billPayService.spec.ts",
-              "line": 6,
-              "column": 9
-            }
-          ]
-        }
-      ]
-    },
-    {
       "title": "transfers\\transfer.spec.ts",
       "file": "transfers/transfer.spec.ts",
       "column": 0,
@@ -386,10 +136,10 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 6,
+                      "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 3125,
+                      "duration": 14820,
                       "error": {
                         "message": "TypeError: accountServicesPage.clickTransferFundsLink is not a function",
                         "stack": "TypeError: accountServicesPage.clickTransferFundsLink is not a function\n    at C:\\Users\\allak\\Desktop\\Playwright\\anna-kozlowska-qa-portfolio\\automation\\Playwright\\ParaBank\\tests\\transfers\\transfer.spec.ts:9:31",
@@ -413,7 +163,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-03T22:30:25.641Z",
+                      "startTime": "2026-11-16T12:38:56.210Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -454,9 +204,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-11-03T22:29:48.965Z",
-    "duration": 41209.75099999993,
-    "expected": 5,
+    "startTime": "2026-11-16T12:38:33.888Z",
+    "duration": 43790.252,
+    "expected": 0,
     "skipped": 0,
     "unexpected": 1,
     "flaky": 0
